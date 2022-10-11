@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/materialize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<title>FBCMSYS</title>
+</head>
+<body>
+	<!-- <head class="header">
+		<nav>
+			<div class="navbar">
+				<ul>
+					<li>
+						<a href="{% url 'admin:index' %}">
+							Administrator login
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</head> -->
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+
+	<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/gsap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/scrollTrigger.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

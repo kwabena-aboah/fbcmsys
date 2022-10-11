@@ -1,0 +1,23 @@
+# This file is used to exclude certain sentitive files and or folders from uploading to server
+
+*.egg-info
+*.pot
+*.log
+*.pyc 
+*.py[co]
+*.env
+db.sqlite3
+.tox/ 
+__pycache__
+MANIFEST
+dist/
+docs/_build/
+docs/locale/
+node_modules/ 
+tests/coverage_html/
+tests/.coverage
+build/
+tests/report/
+staticfiles/
+components/
+media/
