@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     # custom apps
     'member',
     'users',
@@ -59,6 +60,7 @@ INSTALLED_APPS = [
     'import_export',
     'schedule',
     'tinymce',
+    'whitenoise.runserver_nostatic',
     'djangobower',
     'rest_framework',
     'rest_framework_simplejwt'
@@ -91,6 +93,11 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.media',
+                'django.template.context_processors.static',
+                'django.template.context_processors.csrf',
+                'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
