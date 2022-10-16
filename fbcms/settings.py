@@ -27,6 +27,9 @@ BASE_DIR= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
+django_heroku.settings(locals())
+
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -164,7 +167,7 @@ STATICFILES_FINDERS = (
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '/member/static'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
 BOWER_COMPONENTS_ROOT = '/components/'
 BOWER_INSTALLED_APPS = (
