@@ -164,7 +164,7 @@ STATICFILES_FINDERS = (
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '/member/static'), ]
 
 BOWER_COMPONENTS_ROOT = '/components/'
 BOWER_INSTALLED_APPS = (
