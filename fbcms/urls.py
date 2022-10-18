@@ -33,8 +33,8 @@ router.register(r'calendar', CalendarViewset)
 router.register(r'event', EventViewset)
 router.register(r'occurence', OccurenceViewset)
 urlpatterns = [
-    path('jet/', include('jet.urls', 'jet')),
-    path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
+    # path('jet/', include('jet.urls', 'jet')),
+    # path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     path('admin/', admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
     path('', IndexViewset.as_view(), name="index"),
