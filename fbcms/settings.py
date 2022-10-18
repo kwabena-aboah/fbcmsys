@@ -43,7 +43,7 @@ ADMINS = [
 
 MANAGERS = ADMINS
 
-SITE_ID = 1
+# SITE_ID = 1
 
 # Application definition
 
