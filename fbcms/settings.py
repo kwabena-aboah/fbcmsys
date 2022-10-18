@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 import dj_database_url
 from decouple import config
-# import django_heroku
+import django_on_heroku
 import dropbox
 from pathlib import Path
 from datetime import timedelta
@@ -28,7 +28,7 @@ BASE_DIR= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-# django_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
 SECRET_KEY = config('SECRET_KEY')
 
