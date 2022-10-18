@@ -359,7 +359,7 @@ DROPBOX_CONSUMER_SECRET = config('DROPBOX_CONSUMER_SECRET')
 DROPBOX_ROOT_PATH = '/fbcmsys'
 
 # EMAIL CONFIGURATIONS FOR FBCMS
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # for development
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # for development
 
 # Un comment below on production
 # EMAIL_BACKEND = config('EMAIL_BACKEND')
