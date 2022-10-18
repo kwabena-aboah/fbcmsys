@@ -189,7 +189,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 USE_X_FORWARDED_PORT = True
 
 # Custom user settings
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 
 # Tinymce Configuration
 TINYMCE_JS_ROOT = os.path.join(STATIC_ROOT, 'tinymce/tinymce.min.js')
