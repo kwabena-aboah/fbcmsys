@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from django.views.static import serve
 from rest_framework import routers
 from rest_framework_simplejwt.views import TokenRefreshView
-# from users.views import UserViewset, Logout, MyObtainTokenPairView, RegisterApi, ChangePasswordView, UpdateUserView
+from users.views import UserViewset#, Logout, MyObtainTokenPairView, RegisterApi, ChangePasswordView, UpdateUserView
 from member.views import FollowUpViewset, NotesViewset, CalendarViewset, EventViewset, OccurenceViewset, IndexViewset
 
 

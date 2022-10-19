@@ -59,7 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     # custom apps
     'member',
-    # 'users',
+    'users',
     # third-party apps
     'import_export',
     'schedule',
