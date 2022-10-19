@@ -115,7 +115,7 @@ WSGI_APPLICATION = 'fbcms.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-'default': dj_database_url.config(default='postgres://pjrejactnumwei:eb46c8cb2f05851ea2c59fb069c919a0ed919703f853bf54e3da62fea738c5ab@ec2-54-173-237-110.compute-1.amazonaws.com:5432/dcdpts16v7s5t9')
+'default': dj_database_url.config(default='postgres://localhost')
 }
 
 # Password validation
