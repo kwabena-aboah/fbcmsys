@@ -50,7 +50,7 @@ SITE_ID = 1
 INSTALLED_APPS = [
     # 'jet.dashboard',
     # 'jet',
-    'django.contrib.admin',
+    'django.contrib.admin.apps.SimpleAdminConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
