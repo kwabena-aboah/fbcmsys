@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 from django.views.static import serve
 from rest_framework import routers
 from rest_framework_simplejwt.views import TokenRefreshView
-from users.views import UserViewset, Logout, MyObtainTokenPairView, RegisterApi, ChangePasswordView, UpdateUserView
+# from users.views import UserViewset, Logout, MyObtainTokenPairView, RegisterApi, ChangePasswordView, UpdateUserView
 from member.views import FollowUpViewset, NotesViewset, CalendarViewset, EventViewset, OccurenceViewset, IndexViewset
 
 
@@ -38,12 +38,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
     path('', IndexViewset.as_view(), name="index"),
-    path('api/login/', MyObtainTokenPairView.as_view(), name='token_obtain_pair'),
-    path('api/login/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('api/logout/', Logout.as_view(), name='token_destroy'),
-    path('api/registeration/', RegisterApi.as_view()),
-    path('api/change_password/<int:pk>/', ChangePasswordView.as_view(), name='auth_change_password'),
-    path('api/update_profile/<int:pk>/', UpdateUserView.as_view(), name='auth_update_profile'),
+    # path('api/login/', MyObtainTokenPairView.as_view(), name='token_obtain_pair'),
+    # path('api/login/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    # path('api/logout/', Logout.as_view(), name='token_destroy'),
+    # path('api/registeration/', RegisterApi.as_view()),
+    # path('api/change_password/<int:pk>/', ChangePasswordView.as_view(), name='auth_change_password'),
+    # path('api/update_profile/<int:pk>/', UpdateUserView.as_view(), name='auth_update_profile'),
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls')),
     re_path(r'^media/(?P<path>.*)$', serve,
