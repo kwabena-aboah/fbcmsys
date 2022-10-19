@@ -114,7 +114,7 @@ WSGI_APPLICATION = 'fbcms.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DDATABASES = {
+DATABASES = {
     'default': dj_database_url.config()
 }
 
